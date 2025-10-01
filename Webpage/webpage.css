@@ -1,0 +1,134 @@
+ body 
+    {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #fff0f5;
+        color: #333;
+        line-height: 1.6;
+    }
+    h2
+    {
+        text-align: center;
+        color: #d14791;
+        margin-bottom: 20px;
+    }
+nav
+    {
+        background: #ffc0cb;
+        padding: 15px 0;
+        text-align: center;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+nav a
+    {
+        color: #fff;
+        margin: 0 15px;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 16px;
+        transition: color 0.3s ease;
+    }
+nav a:hover{
+    color: #ff69b4;
+}
+section
+    {
+        padding: 50px 20px;
+        max-width: 1000px;
+        margin: auto;
+    }
+
+    #about p
+    {
+        text-align: center;
+        font: size 18px;
+        line-height: 1.6;
+        max-width: 600px;
+        margin: auto;
+    }
+.projects
+    {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+.card
+{
+    background: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    width: 220px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transition 0.3s,box-shadow 0.3s;
+    cursor: pointer;
+}
+.card:hover
+{
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+}
+.card h3
+{
+    color: #d14791;
+    margin-bottom: 10px;
+}
+form
+{
+    max-width: 300px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+form input,form textarea, form button
+{
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ffc0cb;
+    outline: none;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+form button
+{
+    background: #d14791;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: none;
+    border-radius: 10px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+form button:hover
+{
+    background: #ff69b4;
+}
+#formMessage
+{
+    text-align: center;
+    color: #d14791;
+    margin-top: 10px;
+    font-weight: bold;
+}
+@media(max-width: 6768px)
+{
+    .projects
+    {
+    flex-direction:column;
+    align-items: center;
+    }
+}
+a
+{
+    text-decoration: none;
+}
+
+    

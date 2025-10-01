@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Survey</title>
+        <link rel="stylesheet" href="project1.css">
+    </head>
+    <body>
+        <h1><u>School Newsletter survey</u></h1>
+
+        <hr>
+
+        <p>How often do you read the school newsletter?</p>
+        <div class="options">
+        <input type="checkbox" id="option 1">
+        <label for="myCheckbox">Most months</label><br>
+        <input type="checkbox" id="option 2">
+        <label for="myCheckbox">every month</label><br>
+        <input type="checkbox" id="option 3">
+        <label for="myCheckbox">Occasional</label><br>
+        <input type="checkbox" id="option 4">
+        <label for="myCheckbox">Not at all</label>
+        </div>
+
+        <p>Do you believe that the school newsletter is a valuable source of news and information</p>
+        <div class="options">
+        <input type="checkbox" id="option 1">
+        <label for="myCheckbox">Extremely valuable</label><br>
+        <input type="checkbox" id="option 2">
+        <label for="myCheckbox">Very valuable</label><br>
+        <input type="checkbox" id="option 3">
+        <label for="myCheckbox">Moderatley valuable</label><br>
+        <input type="checkbox" id="option 4">
+        <label for="myCheckbox">slightly valuable</label>
+        </div>
+
+        <p>How easy is it to access the school newsletter?</p>
+        <div class="options">
+        <input type="checkbox" id="option 1">
+        <label for="myCheckbox">very easy</label><br>
+        <input type="checkbox" id="option 2">
+        <label for="myCheckbox">easy</label><br>
+        <input type="checkbox" id="option 3">
+        <label for="myCheckbox">somewhat difficult</label><br>
+        <input type="checkbox" id="option 4">
+        <label for="myCheckbox">very difficult</label>
+        </div>
+
+        <p>Which section of the school newsletter do you find most interesting?</p>
+        <div class="options">
+        <input type="checkbox" id="option 1">
+        <label for="myCheckbox">school events</label><br>
+        <input type="checkbox" id="option 2">
+        <label for="myCheckbox">student achievments</label><br>
+        <input type="checkbox" id="option 3">
+        <label for="myCheckbox">important announcements</label><br>
+        <input type="checkbox" id="option 4">
+        <label for="myCheckbox">principal's message</label>
+        </div>
+
+        <button type="submit" class="submit">
+            submit
+        </button>
+
+        
+    <script>
+        const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+        checkboxes.forEach(cb => {
+        cb.addEventListener('change', () => {
+        if (cb.checked) {
+          checkboxes.forEach(other => {
+            if (other !== cb) other.checked = false;
+          });
+        }
+      });
+    });
+  </script>
+    </body>
+</html>
